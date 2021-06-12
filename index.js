@@ -6,12 +6,18 @@ require('electron-reload')(__dirname, {
 });
 
 let mainWindow
+
 function createWindow() {
     mainWindow = new BrowserWindow({
         width: 600,
         height: 400,
         frame: false,
         transparent: true,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+            preload: path.join(__dirname, 'preload.js')
+        },
         // resizable: false
     })
 
