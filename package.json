@@ -1,0 +1,57 @@
+{
+  "name": "gnrhub",
+  "version": "1.0.0",
+  "description": "GN'R Bootleg Manager",
+  "main": "index.js",
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-reload": "^1.5.0",
+    "handbrake-js": "^5.0.2"
+  },
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.10.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder --windows nsis:ia32"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redteadeveloper/GNRhub.git"
+  },
+  "author": "redteadeveloper",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/redteadeveloper/GNRhub/issues"
+  },
+  "homepage": "https://github.com/redteadeveloper/GNRhub#readme",
+  "build": {
+    "productName": "GNRhub",
+    "appId": "com.redtea.gnrhub",
+    "asar": true,
+    "protocols": {
+      "name": "gnrhub",
+      "schemes": [
+        "gnrhub"
+      ]
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./src/img/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "buildResources": "./resources/installer/",
+      "output": "./dist/",
+      "app": "."
+    }
+  }
+}
