@@ -1,9 +1,10 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const Store = require('electron-store');
 
-require('electron-reload')(__dirname, {
-    electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
-});
+const store = new Store();
+
+require('electron-reload')(__dirname);
 
 let mainWindow
 
@@ -18,7 +19,7 @@ function createWindow() {
             contextIsolation: false,
             preload: path.join(__dirname, 'preload.js')
         },
-        // resizable: false
+        resizable: false
     })
 
     mainWindow.loadFile('./src/html/index.html')
