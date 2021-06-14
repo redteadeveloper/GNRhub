@@ -3,8 +3,11 @@ const path = require('path')
 const Store = require('electron-store');
 
 const store = new Store();
+global.store = store
 
-require('electron-reload')(__dirname);
+require('electron-reload')(__dirname, {
+    electron: path.join(__dirname, 'node_modules', 'electron', 'dist', 'electron.exe')
+});
 
 let mainWindow
 
@@ -22,7 +25,11 @@ function createWindow() {
         resizable: false
     })
 
-    mainWindow.loadFile('./src/html/index.html')
+    if (store.get('basedir') == undefined ) {
+        mainWindow.loadFile('./src/html/homepage.html')
+    } else {
+        mainWindow.loadFile('./src/html/mainpage.html')
+    }
     // mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function () {
