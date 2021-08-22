@@ -1,3 +1,18 @@
+body {
+    background: url('../img/background-1.jpg');
+    text-align: center;
+    color: #000000;
+}
+
+
+
+.titleBarClass {
+    text-align: right;
+    -webkit-app-region: drag
+}
+
+
+
 #dirbutton {
     display: inline-block;
     font-size: 15px;
@@ -45,4 +60,48 @@
 #dirbutton:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+
+
+#closebutton {
+    background-color: transparent;
+    border: none;
+    -webkit-app-region: no-drag;
+}
+
+#closebutton span {
+    color: white;
+    font-size: 20px
+}
+
+#closebutton span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#closebutton:focus {
+    outline:none
+}
+
+
+
+#minimizebutton {
+    background-color: transparent;
+    border: none;
+    -webkit-app-region: no-drag;
+}
+
+#minimizebutton span {
+    color: white;
+    font-size: 20px
+}
+
+#minimizebutton span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#minimizebutton:focus {
+    outline: none;
 }

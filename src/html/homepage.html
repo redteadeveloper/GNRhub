@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="../css/homepage.css">
     <title>GNRhub</title>
   </head>
-  <body style="background-image: url('../img/background.gif'); text-align: center; color: #000000;">
+  <body>
     <div class="bg-image"></div>
-    <br>
+    <div class="titleBarClass">
+      <button type="button" id="minimizebutton"><span onclick="minimizeWindow()">🗕︎</span></button>
+      <button type="button" id="closebutton"><span onclick="closeWindow()">🗙︎</span></button>
+    </div>
     <h1 style="color:#FFFFFF;">GNRhub</h1>
-    <h3 style="color:#FFFFFF;">Guns N' Roses bootleg manager</h3><br><br>
-    <div class="button">
+    <h4 style="color:#FFFFFF;">Guns N' Roses bootleg manager</h4><br><br>
+    <div class="dirButtonClass">
       <button type="button" id="dirbutton" onclick="run()"><span>Select folder</span></button>
       <br><br><br>
     </div>

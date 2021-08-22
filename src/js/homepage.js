@@ -6,7 +6,7 @@ const fs = require('fs');
 let store = getGlobal('store');
 
 function createDir(dir) {
-    if (!fs.existsSync(dir)){
+    if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
     }
 }
@@ -18,23 +18,21 @@ function run() {
         if (response.filePaths[0]) {
             console.log(response.filePaths[0]);
             store.set('basedir', response.filePaths[0]);
+
             createDir(response.filePaths[0].concat('/Miscellaneous'));
             createDir(response.filePaths[0].concat('/Bootleg Video'));
             createDir(response.filePaths[0].concat('/Bootleg Audio'));
-            createDir(response.filePaths[0].concat('/Officially Released Video'));
-            createDir(response.filePaths[0].concat('/Officially Released Audio'));
             createDir(response.filePaths[0].concat('/Demo'));
+
             getCurrentWindow().close();
         }
     })
 }
 
-// let num = 1
+function closeWindow() {
+    getCurrentWindow().close();
+}
 
-// function test() {
-//     num = num + 1
-//     if (num > 5) num = 1
-//     document.body.style.backgroundImage = `url('../img/background${num}.png')`;
-// }
-
-// setInterval(test, 7000);
+function minimizeWindow() {
+    getCurrentWindow().minimize()
+}

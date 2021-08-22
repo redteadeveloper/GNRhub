@@ -1,7 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const Store = require('electron-store');
-const main = require('electron-reload');
 
 const store = new Store();
 global.store = store;
@@ -38,8 +37,7 @@ function createWindow() {
             frame: false,
             webPreferences: {
                 nodeIntegration: true,
-                contextIsolation: false,
-                preload: path.join(__dirname, 'preload.js')
+                contextIsolation: false
             },
             resizable: false
         })
@@ -51,8 +49,6 @@ function createWindow() {
             }
         })
     }
-
-    // mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function () {
         mainWindow = null;
