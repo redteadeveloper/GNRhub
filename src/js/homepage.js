@@ -11,7 +11,7 @@ function createDir(dir) {
     }
 }
 
-function run() {
+function selectDir() {
     dialog.showOpenDialog({
         properties: ['openDirectory']
     }).then(function (response) {
@@ -19,10 +19,10 @@ function run() {
             console.log(response.filePaths[0]);
             store.set('basedir', response.filePaths[0]);
 
-            createDir(response.filePaths[0].concat('/Miscellaneous'));
             createDir(response.filePaths[0].concat('/Bootleg Video'));
             createDir(response.filePaths[0].concat('/Bootleg Audio'));
             createDir(response.filePaths[0].concat('/Demo'));
+            createDir(response.filePaths[0].concat('/Miscellaneous'));
 
             getCurrentWindow().close();
         }
@@ -34,5 +34,5 @@ function closeWindow() {
 }
 
 function minimizeWindow() {
-    getCurrentWindow().minimize()
+    getCurrentWindow().minimize();
 }
