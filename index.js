@@ -90,8 +90,8 @@ ipcMain.on('closeDirSelectPage', () => {
     if (store.get('basedir') == undefined ) {
         dialog.showMessageBox(null, options).then(function(res) {
             if(res.response == 0) {
-                app.exit();
+                app.quit();
             }
         });
     }
-})
+});
