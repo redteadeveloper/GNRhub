@@ -24,8 +24,7 @@ function run() {
             createDir(response.filePaths[0].concat('/Officially Released Video'));
             createDir(response.filePaths[0].concat('/Officially Released Audio'));
             createDir(response.filePaths[0].concat('/Demo'));
-            // getCurrentWindow().loadFile(path.join(__dirname + '/../html/mainpage.html'));
-            ipcRenderer.send('open-new-window', 'mainpage');
+            getCurrentWindow().close();
         }
     })
 }

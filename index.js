@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const Store = require('electron-store');
+const main = require('electron-reload');
 
 const store = new Store();
 global.store = store;
@@ -10,6 +11,7 @@ require('electron-reload')(__dirname, {
 });
 
 let mainWindow;
+let childWindow;
 
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -25,19 +27,39 @@ function createWindow() {
         resizable: false
     })
 
+    mainWindow.loadFile('./src/html/mainpage.html');
+
     if (store.get('basedir') == undefined ) {
-        mainWindow.loadFile('./src/html/homepage.html');
-    } else {
-        mainWindow.loadFile('./src/html/mainpage.html');
+        childWindow = new BrowserWindow({
+            parent: mainWindow,
+            width: 300,
+            height: 300,
+            modal: true,
+            frame: false,
+            webPreferences: {
+                nodeIntegration: true,
+                contextIsolation: false,
+                preload: path.join(__dirname, 'preload.js')
+            },
+            resizable: false
+        })
+        childWindow.loadFile('./src/html/homepage.html');
+
+        childWindow.on('closed', function () {
+            if (store.get('basedir') == undefined ) {
+                app.exit()
+            }
+        })
     }
-    mainWindow.webContents.openDevTools();
+
+    // mainWindow.webContents.openDevTools();
 
     mainWindow.on('closed', function () {
         mainWindow = null;
     })
 }
 
-app.on('ready', createWindow)
+app.on('ready', createWindow);
 
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit();
@@ -47,7 +69,20 @@ app.on('activate', function () {
     if (mainWindow === null) createWindow();
 })
 
-ipcMain.on('open-new-window', (event, fileName) => {
-    let win = new BrowserWindow({ width:960, height:540 });
-    win.loadURL(`file://${__dirname}/` + fileName + `.html`);
+ipcMain.on('removeDir', () => {
+    childWindow = new BrowserWindow({
+        parent: mainWindow,
+        width: 300,
+        height: 300,
+        modal: true,
+        frame: false,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+            preload: path.join(__dirname, 'preload.js')
+        },
+        resizable: false
+    })
+
+    childWindow.loadFile('./src/html/homepage.html');
 })
