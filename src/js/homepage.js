@@ -26,11 +26,15 @@ function selectDir() {
 
             getCurrentWindow().close();
         }
-    })
+    });
 }
 
 function closeWindow() {
-    getCurrentWindow().close();
+    if (store.get('basedir') == undefined) {
+        ipcRenderer.send('closeDirSelectPage');
+    } else {
+        getCurrentWindow().close();
+    }
 }
 
 function minimizeWindow() {
