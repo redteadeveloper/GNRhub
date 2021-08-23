@@ -8,3 +8,15 @@ let basedir = store.get('basedir');
 function removeDir() {
     ipcRenderer.send('removeDir');
 }
+
+function closeWindow() {
+    if (store.get('basedir') == undefined) {
+        ipcRenderer.send('closeDirSelectPage');
+    } else {
+        getCurrentWindow().close();
+    }
+}
+
+function minimizeWindow() {
+    getCurrentWindow().minimize();
+}

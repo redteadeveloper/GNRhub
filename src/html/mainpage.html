@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="../css/mainpage.css">
     <title>GNRhub</title>
   </head>
-  <body style="background-color: aliceblue; text-align: left; color: #000000;">
-    <div class="content">
-      <h1 style="color:#454545;">GNRhub</h1>
+  <body>
+    <div class="titleBarClass">
+      <button type="button" id="minimizeButton"><span onclick="minimizeWindow()">🗕︎</span></button>
+      <button type="button" id="closeButton"><span onclick="closeWindow()">🗙︎</span></button>
     </div>
-    <div class="button">
+    <div class="content">
+      <h1>GNRhub</h1>
       <button type="button" id="resetButton" onclick="removeDir()"><span>Select new folder</span></button>
     </div>
   </body>

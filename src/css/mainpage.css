@@ -1,3 +1,66 @@
+body {
+    background-color: black;
+    color: #FFFFFF;
+    margin: 0%;
+    padding: 0%
+}
+
+
+
+.titleBarClass {
+    text-align: right;
+    -webkit-app-region: drag;
+}
+
+
+
 .content {
-    margin: 30px;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+
+#closeButton {
+    background-color: transparent;
+    border: none;
+    -webkit-app-region: no-drag;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+#closeButton span {
+    color: white;
+    font-size: 20px
+}
+
+#closeButton span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#closeButton:focus {
+    outline:none
+}
+
+
+
+#minimizeButton {
+    background-color: transparent;
+    border: none;
+    -webkit-app-region: no-drag;
+    margin: 0px;
+}
+
+#minimizeButton span {
+    color: white;
+    font-size: 20px
+}
+
+#minimizeButton span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#minimizeButton:focus {
+    outline: none;
 }

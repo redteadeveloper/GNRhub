@@ -2,18 +2,20 @@ body {
     background: url('../img/background-1.jpg');
     text-align: center;
     color: #000000;
+    margin: 0%;
+    padding: 0%
 }
 
 
 
 .titleBarClass {
     text-align: right;
-    -webkit-app-region: drag
+    -webkit-app-region: drag;
 }
 
 
 
-#dirbutton {
+#dirButton {
     display: inline-block;
     font-size: 15px;
     background-color: transparent;
@@ -30,21 +32,21 @@ body {
     outline: none !important;
 }
 
-#dirbutton:hover {
+#dirButton:hover {
     background-color: #0C71E0;
     color: #FFFFFF;
     border-radius: 3px;
     border-bottom: 1px solid #0C71E0;
 }
 
-#dirbutton span {
+#dirButton span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-#dirbutton span:after {
+#dirButton span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -53,55 +55,58 @@ body {
     transition: 0.5s;
 }
 
-#dirbutton:hover span {
+#dirButton:hover span {
     padding-right: 25px;
 }
 
-#dirbutton:hover span:after {
+#dirButton:hover span:after {
     opacity: 1;
     right: 0;
 }
 
 
 
-#closebutton {
+#closeButton {
     background-color: transparent;
     border: none;
     -webkit-app-region: no-drag;
+    margin-right: 10px;
+    margin-top: 7px;
 }
 
-#closebutton span {
+#closeButton span {
     color: white;
     font-size: 20px
 }
 
-#closebutton span:hover {
+#closeButton span:hover {
     color: gray;
     cursor: pointer;
 }
 
-#closebutton:focus {
+#closeButton:focus {
     outline:none
 }
 
 
 
-#minimizebutton {
+#minimizeButton {
     background-color: transparent;
     border: none;
     -webkit-app-region: no-drag;
+    margin: 0px;
 }
 
-#minimizebutton span {
+#minimizeButton span {
     color: white;
     font-size: 20px
 }
 
-#minimizebutton span:hover {
+#minimizeButton span:hover {
     color: gray;
     cursor: pointer;
 }
 
-#minimizebutton:focus {
+#minimizeButton:focus {
     outline: none;
 }
