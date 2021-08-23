@@ -17,7 +17,6 @@ body {
 
 
 .titleBarClass {
-    text-align: right;
     -webkit-app-region: drag;
     margin: 1px;
     height: 50px;
@@ -36,12 +35,14 @@ body {
     border: none;
     -webkit-app-region: no-drag;
     height: 100%;
+    width: 50px;
+    float: right;
+    transition: 0.5s;
 }
 
 #closeButton span {
     color: white;
-    font-size: 20px;
-    margin: 10px;
+    font-size: 30px;
     vertical-align: middle;
 }
 
@@ -57,22 +58,53 @@ body {
 
 
 
+#maximizeButton {
+    background-color: transparent;
+    border: none;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    width: 50px;
+    float: right;
+    transition: 0.5s;
+}
+
+#maximizeButton span {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+#maximizeButton:hover {
+    color: gray;
+    cursor: pointer;
+    background-color: gray;
+}
+
+#maximizeButton:focus {
+    outline: none;
+}
+
+
+
 #minimizeButton {
     background-color: transparent;
     border: none;
     -webkit-app-region: no-drag;
-    margin: 0px;
     height: 100%;
+    width: 50px;
+    float: right;
+    transition: 0.5s;
 }
 
 #minimizeButton span {
     color: white;
-    font-size: 20px
+    font-size: 35px;
 }
 
-#minimizeButton span:hover {
+#minimizeButton:hover {
     color: gray;
     cursor: pointer;
+    background-color: gray;
 }
 
 #minimizeButton:focus {

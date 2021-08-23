@@ -1,5 +1,5 @@
 const { dialog, getGlobal, getCurrentWindow } = require('electron').remote;
-const { ipcRenderer } = require("electron");
+const { ipcRenderer, BrowserWindow } = require("electron");
 const path = require('path');
 
 let store = getGlobal('store');
