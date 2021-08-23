@@ -1,8 +1,17 @@
+@font-face {
+    font-family: corvinus_skyline;
+    src: url('../fonts/Corvinus Skyline ICG.ttf');
+}
+
+
+
 body {
     background-color: black;
     color: #FFFFFF;
+    height: 100%;
     margin: 0%;
-    padding: 0%
+    padding: 0%;
+    -webkit-app-region: no-drag;
 }
 
 
@@ -10,32 +19,36 @@ body {
 .titleBarClass {
     text-align: right;
     -webkit-app-region: drag;
+    margin: 1px;
+    height: 50px;
 }
 
 
 
 .content {
-    margin-top: 0px;
     margin-left: 30px;
 }
+
 
 
 #closeButton {
     background-color: transparent;
     border: none;
     -webkit-app-region: no-drag;
-    margin-right: 10px;
-    margin-top: 7px;
+    height: 100%;
 }
 
 #closeButton span {
     color: white;
-    font-size: 20px
+    font-size: 20px;
+    margin: 10px;
+    vertical-align: middle;
 }
 
-#closeButton span:hover {
+#closeButton:hover {
     color: gray;
     cursor: pointer;
+    background-color: red;
 }
 
 #closeButton:focus {
@@ -49,6 +62,7 @@ body {
     border: none;
     -webkit-app-region: no-drag;
     margin: 0px;
+    height: 100%;
 }
 
 #minimizeButton span {
@@ -62,5 +76,145 @@ body {
 }
 
 #minimizeButton:focus {
+    outline: none;
+}
+
+
+
+#menuBAud {
+    font-family: corvinus_skyline;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    border-color: transparent;
+    border-left: none;
+    border-right: none;
+    float: left;
+    transition: 0.5s;
+}
+
+#menuBAud span {
+    color: lightgrey;
+    font-size: 25px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
+#menuBAud:hover {
+    border-bottom: 2px solid yellow;
+    color: white;
+    cursor: pointer;   
+}
+
+#menuBAud:hover span {
+    color: white;
+}
+
+#menuBAud:focus {
+    outline: none;
+}
+
+
+
+#menuBVid {
+    font-family: corvinus_skyline;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    border-color: transparent;
+    border-left: none;
+    border-right: none;
+    float: left;
+    transition: 0.5s;
+}
+
+#menuBVid span {
+    color: lightgrey;
+    font-size: 25px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
+#menuBVid:hover {
+    border-bottom: 2px solid yellow;
+    color: white;
+    cursor: pointer;   
+}
+
+#menuBVid:hover span {
+    color: white;
+}
+
+#menuBVid:focus {
+    outline: none;
+}
+
+
+
+#menuDemo {
+    font-family: corvinus_skyline;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    border-color: transparent;
+    border-left: none;
+    border-right: none;
+    float: left;
+    transition: 0.5s;
+}
+
+#menuDemo span {
+    color: lightgrey;
+    font-size: 25px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
+#menuDemo:hover {
+    border-bottom: 2px solid yellow;
+    color: white;
+    cursor: pointer;   
+}
+
+#menuDemo:hover span {
+    color: white;
+}
+
+#menuDemo:focus {
+    outline: none;
+}
+
+
+
+#menuMisc {
+    font-family: corvinus_skyline;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    border-color: transparent;
+    border-left: none;
+    border-right: none;
+    float: left;
+    transition: 0.5s;
+}
+
+#menuMisc span {
+    color: lightgrey;
+    font-size: 25px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
+#menuMisc:hover {
+    border-bottom: 2px solid yellow;
+    color: white;
+    cursor: pointer;   
+}
+
+#menuMisc:hover span {
+    color: white;
+}
+
+#menuMisc:focus {
     outline: none;
 }

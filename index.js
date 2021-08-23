@@ -21,8 +21,7 @@ function createWindow() {
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
-        },
-        resizable: false
+        }
     });
 
     mainWindow.loadFile('./src/html/mainpage.html');
