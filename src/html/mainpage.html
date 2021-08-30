@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <script src="../js/mainpage.js"></script>
+    <script>window.$ = window.jQuery = require('jquery');</script>
     <link rel="stylesheet" href="../css/mainpage.css">
     <title>GNRhub</title>
   </head>
   <body>
     <div class="titleBarClass">
-      <button type="button" id="menuBAud" onclick="menuBAud()""><span>Audio</span></button>
-      <button type="button" id="menuBVid" onclick="menuBVid()"><span>Video</span></button>
+      <button type="button" id="menuLive" onclick="menuLive()"><span>Live</span></button>
       <button type="button" id="menuDemo" onclick="menuDemo()"><span>Demo</span></button>
       <button type="button" id="menuMisc" onclick="menuMisc()"><span>Misc</span></button>
       <button type="button" id="closeButton" onclick="closeWindow()"><span>×</span></button>
       <button type="button" id="minimizeButton" onclick="minimizeWindow()"><span>-</span></button>
     </div>
-    <div class="content">
-      <h1>GNRhub</h1>
-      <button type="button" id="resetButton" onclick="removeDir()"><span>Select new folder</span></button>
-    </div>
+    <div class="content"></div>
   </body>
 </html>
