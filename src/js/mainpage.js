@@ -41,6 +41,10 @@ function minimizeWindow() {
     getCurrentWindow().minimize();
 }
 
+function maximizeWindow() {
+    getCurrentWindow().isMaximized() ? getCurrentWindow().unmaximize() : getCurrentWindow(). maximize()
+}
+
 function menuLive() {
     currentMenu = "live";
     changeActiveMenu("Live");

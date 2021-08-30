@@ -62,7 +62,7 @@ body {
 
 
 
-#maximizeButton {
+/* #maximizeButton {
     background-color: transparent;
     border: none;
     -webkit-app-region: no-drag;
@@ -74,8 +74,10 @@ body {
 
 #maximizeButton span {
     color: white;
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
 }
 
 #maximizeButton:hover {
@@ -86,7 +88,7 @@ body {
 
 #maximizeButton:focus {
     outline: none;
-}
+} */
 
 
 
@@ -135,19 +137,19 @@ body {
     cursor: pointer;
 }
 
+#menuLive span {
+    color: lightgrey;
+    font-size: 30px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
 #menuLive:hover span {
     color: white;
 }
 
 #menuLive:focus {
     outline: none;
-}
-
-#menuLive span {
-    color: lightgrey;
-    font-size: 30px;
-    margin: 7px;
-    transition: 0.5s;
 }
 
 
@@ -170,19 +172,19 @@ body {
     cursor: pointer;
 }
 
+#menuDemo span {
+    color: lightgrey;
+    font-size: 30px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
 #menuDemo:hover span {
     color: white;
 }
 
 #menuDemo:focus {
     outline: none;
-}
-
-#menuDemo span {
-    color: lightgrey;
-    font-size: 30px;
-    margin: 7px;
-    transition: 0.5s;
 }
 
 
