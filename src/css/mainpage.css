@@ -57,7 +57,7 @@ body {
 }
 
 #closeButton:focus {
-    outline:none
+    outline: none;
 }
 
 
@@ -129,17 +129,10 @@ body {
     transition: 0.5s;
 }
 
-#menuLive span {
-    color: lightgrey;
-    font-size: 30px;
-    margin: 7px;
-    transition: 0.5s;
-}
-
 #menuLive:hover {
     border-bottom: 2px solid goldenrod;
     color: white;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 #menuLive:hover span {
@@ -148,6 +141,13 @@ body {
 
 #menuLive:focus {
     outline: none;
+}
+
+#menuLive span {
+    color: lightgrey;
+    font-size: 30px;
+    margin: 7px;
+    transition: 0.5s;
 }
 
 
@@ -164,17 +164,10 @@ body {
     transition: 0.5s;
 }
 
-#menuDemo span {
-    color: lightgrey;
-    font-size: 30px;
-    margin: 7px;
-    transition: 0.5s;
-}
-
 #menuDemo:hover {
     border-bottom: 2px solid goldenrod;
     color: white;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 #menuDemo:hover span {
@@ -183,6 +176,13 @@ body {
 
 #menuDemo:focus {
     outline: none;
+}
+
+#menuDemo span {
+    color: lightgrey;
+    font-size: 30px;
+    margin: 7px;
+    transition: 0.5s;
 }
 
 
@@ -199,17 +199,10 @@ body {
     transition: 0.5s;
 }
 
-#menuMisc span {
-    color: lightgrey;
-    font-size: 30px;
-    margin: 7px;
-    transition: 0.5s;
-}
-
 #menuMisc:hover {
     border-bottom: 2px solid goldenrod;
     color: white;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 #menuMisc:hover span {
@@ -218,4 +211,11 @@ body {
 
 #menuMisc:focus {
     outline: none;
+}
+
+#menuMisc span {
+    color: lightgrey;
+    font-size: 30px;
+    margin: 7px;
+    transition: 0.5s;
 }

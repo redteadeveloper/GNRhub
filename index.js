@@ -25,7 +25,7 @@ function createWindow() {
 
     mainWindow.loadFile('./src/html/mainpage.html');
 
-    if (store.get('basedir') == undefined ) {
+    if (typeof store.get('basedir') == "undefined" ) {
         childWindow = new BrowserWindow({
             parent: mainWindow,
             width: 300,
