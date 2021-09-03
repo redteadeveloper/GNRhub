@@ -14,7 +14,7 @@ function changeActiveMenu(name) {
             let menu = document.getElementById(`menu${name}Button`);
             menu.getElementsByTagName("span")[0].style.setProperty("color", "white");
             menu.style.setProperty("border-bottom", "2px solid yellow");
-            $(document.getElementsByClassName("content")).load(`../html/menus/${name.toLowerCase()}.html`);
+            $(document.getElementById("content")).load(`../html/menus/${name.toLowerCase()}.html`);
         } else {
             let menu = document.getElementById(`menu${allMenus[a]}Button`);
             menu.style.setProperty("border-color", "");

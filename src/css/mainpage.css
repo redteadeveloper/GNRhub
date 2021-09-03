@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     -webkit-app-region: no-drag;
+	font-family: sans-serif;
 }
 
 /*
@@ -18,10 +19,11 @@ Title bar ============================================================
 
 */
 
-.titleBarClass {
+#titleBar {
     -webkit-app-region: drag;
     margin: 1px;
     height: 58px;
+	font-family: corvinus_skyline;
 }
 
 /* Close button */
@@ -216,7 +218,7 @@ Title bar ============================================================
 
 /* Main content */
 
-.content {
+#content {
     margin: 0;
     height: calc(100% - 60px);
     width: calc(100%);
