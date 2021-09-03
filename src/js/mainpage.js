@@ -41,7 +41,7 @@ function maximizeWindow() {
 
 // Close
 function closeWindow() {
-    if (store.get("basedir") == undefined) {
+    if (typeof store.get("basedir") === "undefined") {
         ipcRenderer.send("closeDirSelectPage");
     } else {
         getCurrentWindow().close();

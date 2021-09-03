@@ -19,8 +19,8 @@ function selectDir() {
             console.log(response.filePaths[0]);
             store.set('basedir', response.filePaths[0]);
 
-            createDir(response.filePaths[0].concat('/Bootleg Video'));
-            createDir(response.filePaths[0].concat('/Bootleg Audio'));
+            createDir(response.filePaths[0].concat('/Live/Video'));
+            createDir(response.filePaths[0].concat('/Live/Audio'));
             createDir(response.filePaths[0].concat('/Demo'));
             createDir(response.filePaths[0].concat('/Miscellaneous'));
 
