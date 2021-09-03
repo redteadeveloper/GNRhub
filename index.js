@@ -14,8 +14,10 @@ let childWindow;
 
 function createWindow() {
     mainWindow = new BrowserWindow({
-        width: 600,
-        height: 400,
+        width: 900,
+        height: 600,
+        minWidth: 600,
+        minHeight: 400,
         frame: false,
         webPreferences: {
             nodeIntegration: true,

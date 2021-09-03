@@ -1,0 +1,82 @@
+/* 
+
+Live menu bar ============================================================
+
+*/
+
+.liveMenu {
+    height: 50px;
+	background-color: darkslategray;
+	display: inline-block;
+	width: 100%;
+}
+
+/* Live menu bar - Audio */
+
+#liveAudio {
+    font-family: corvinus_skyline;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    border-color: transparent;
+    border-left: none;
+    border-right: none;
+    float: left;
+    transition: 0.5s;
+}
+
+#liveAudio:hover {
+    border-bottom: 2px solid goldenrod;
+    color: white;
+    cursor: pointer;
+}
+
+#liveAudio:hover span {
+    color: white;
+}
+
+#liveAudio:focus {
+    outline: none;
+}
+
+#liveAudio span {
+    color: lightgrey;
+    font-size: 25px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
+/* Live menu bar - Audio */
+
+#liveVideo {
+    font-family: corvinus_skyline;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    border-color: transparent;
+    border-left: none;
+    border-right: none;
+    float: left;
+    transition: 0.5s;
+}
+
+#liveVideo:hover {
+    border-bottom: 2px solid goldenrod;
+    color: white;
+    cursor: pointer;
+}
+
+#liveVideo:hover span {
+    color: white;
+}
+
+#liveVideo:focus {
+    outline: none;
+}
+
+#liveVideo span {
+    color: lightgrey;
+    font-size: 25px;
+    margin: 7px;
+    transition: 0.5s;
+}

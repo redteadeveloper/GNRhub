@@ -1,19 +1,23 @@
 body {
-    background: url('../img/background-1.jpg');
+    background: url('../img/background.jpg');
     text-align: center;
     color: #000000;
     margin: 0%;
     padding: 0%;
 }
 
+/* 
 
+Title bar ============================================================
+
+*/
 
 .titleBarClass {
     text-align: right;
     -webkit-app-region: drag;
 }
 
-
+/* Select directory button */
 
 #dirButton {
     display: inline-block;
@@ -64,7 +68,7 @@ body {
     right: 0;
 }
 
-
+/* Close button */
 
 #closeButton {
     background-color: transparent;
@@ -88,7 +92,7 @@ body {
     outline: none;
 }
 
-
+/* Minimize button */
 
 #minimizeButton {
     background-color: transparent;
