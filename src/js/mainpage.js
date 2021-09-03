@@ -17,8 +17,8 @@ function changeActiveMenu(name) {
             $(document.getElementsByClassName("content")).load(`../html/menus/${name.toLowerCase()}.html`);
         } else {
             let menu = document.getElementById(`menu${allMenus[a]}Button`);
-            menu.style.setProperty("border-color", "transparent");
-            menu.getElementsByTagName("span")[0].style.setProperty("color", "lightgrey");
+            menu.style.setProperty("border-color", "");
+            menu.getElementsByTagName("span")[0].style.setProperty("color", "");
         }
     }
 }
