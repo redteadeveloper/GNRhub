@@ -217,41 +217,6 @@ Title bar ============================================================
     transition: 0.5s;
 }
 
-/* Live button */
-
-#menuLiveButton {
-    font-family: corvinus_skyline;
-    background-color: transparent;
-    -webkit-app-region: no-drag;
-    height: 100%;
-    border-color: transparent;
-    border-left: none;
-    border-right: none;
-    float: left;
-    transition: 0.5s;
-}
-
-#menuLiveButton:hover {
-    border-bottom: 2px solid goldenrod;
-    color: white;
-    cursor: pointer;
-}
-
-#menuLiveButton span {
-    color: lightgrey;
-    font-size: 30px;
-    margin: 7px;
-    transition: 0.5s;
-}
-
-#menuLiveButton:hover span {
-    color: white;
-}
-
-#menuLiveButton:focus {
-    outline: none;
-}
-
 /* Add button */
 
 #addButton {

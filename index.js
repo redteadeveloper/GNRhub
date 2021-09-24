@@ -72,7 +72,7 @@ ipcMain.on('removeDir', () => {
         resizable: false
     });
 
-    childWindow.loadFile('./src/html/homepage.html');
+    childWindow.loadFile("./src/html/homepage.html");
 });
 
 ipcMain.on('closeDirSelectPage', () => {
