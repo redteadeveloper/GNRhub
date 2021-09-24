@@ -40,7 +40,7 @@ function createWindow() {
             },
             resizable: false
         })
-        childWindow.loadFile('./src/html/homepage.html');
+        childWindow.loadFile('./src/html/dirpage.html');
     }
 
     mainWindow.on('closed', function () {

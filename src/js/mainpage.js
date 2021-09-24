@@ -68,3 +68,6 @@ function menuMiscButton() {
     changeActiveMenu("Misc");
 }
 
+function addButton() {
+	
+}

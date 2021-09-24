@@ -24,6 +24,7 @@ Title bar ============================================================
     margin: 1px;
     height: 58px;
 	font-family: corvinus_skyline;
+	vertical-align: baseline;
 }
 
 /* Close button */
@@ -216,6 +217,72 @@ Title bar ============================================================
     transition: 0.5s;
 }
 
+/* Live button */
+
+#menuLiveButton {
+    font-family: corvinus_skyline;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    height: 100%;
+    border-color: transparent;
+    border-left: none;
+    border-right: none;
+    float: left;
+    transition: 0.5s;
+}
+
+#menuLiveButton:hover {
+    border-bottom: 2px solid goldenrod;
+    color: white;
+    cursor: pointer;
+}
+
+#menuLiveButton span {
+    color: lightgrey;
+    font-size: 30px;
+    margin: 7px;
+    transition: 0.5s;
+}
+
+#menuLiveButton:hover span {
+    color: white;
+}
+
+#menuLiveButton:focus {
+    outline: none;
+}
+
+/* Add button */
+
+#addButton {
+    background-color: transparent;
+    border: solid white 2px;
+    -webkit-app-region: no-drag;
+    height: 36px;
+    width: auto;
+    float: right;
+    transition: 0.5s;
+	margin-top: 11px;
+	margin-right: 30px;
+	border-radius: 7px;
+}
+
+#addButton span {
+    color: white;
+    font-size: 17px;
+    vertical-align: middle;
+	margin: 10px;
+}
+
+#addButton:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+#addButton:focus {
+    outline: none;
+}
+
 /* Main content */
 
 #content {
@@ -224,4 +291,6 @@ Title bar ============================================================
     width: calc(100%);
     display: inline-block;
     position: absolute;
+	background-color: red;
 }
+
