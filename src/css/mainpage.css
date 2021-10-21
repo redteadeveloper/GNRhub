@@ -234,7 +234,8 @@ Title bar ============================================================
 
 #addButton span {
     color: white;
-    font-size: 17px;
+    font-size: 15px;
+	/* font-family: corvinus_skyline; */
     vertical-align: middle;
 	margin: 10px;
 }

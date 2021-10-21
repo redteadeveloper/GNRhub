@@ -75,6 +75,23 @@ ipcMain.on('removeDir', () => {
     childWindow.loadFile("./src/html/homepage.html");
 });
 
+ipcMain.on('addItem', () => {
+    childWindow = new BrowserWindow({
+        parent: mainWindow,
+        width: 500,
+        height: 300,
+        modal: true,
+        frame: false,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false
+        },
+        resizable: false
+    });
+
+    childWindow.loadFile("./src/html/add.html");
+});
+
 ipcMain.on('closeDirSelectPage', () => {
 
     const options = {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="../js/add.js"></script>
+    <link rel="stylesheet" href="../css/add.css">
+    <title>GNRhub</title>
+  </head>
+  <body>
+    <div id="titleBar">
+      <span id="additem">Add item</span>
+      <button type="button" id="minimizeButton"><span onclick="minimizeWindow()">🗕︎</span></button>
+      <button type="button" id="closeButton"><span onclick="closeWindow()">🗙︎</span></button>
+    </div>
+    <form>
+      <table id="table">
+        <tr>
+          <td>Directory</td>
+          <td>
+            <input class="textinput" type="text" name="name">
+          </td><br>
+        </tr>
+        <tr>
+          <td>Title</td>
+          <td>
+            <input class="textinput" type="text" name="name">
+          </td><br>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>
+            <select name="type" id="type-select">
+              <option value="">--Please choose an option--</option>
+              <option value="live">live</option>
+              <option value="demo">demo</option>
+              <option value="miscellaneous">miscellaneous</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+        <td><br><input type="submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+    <br><br><br>
+  </body>
+</html>

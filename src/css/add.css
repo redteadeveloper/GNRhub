@@ -1,0 +1,114 @@
+body {
+	background-color: black;
+    color: #000000;
+    margin: 0%;
+    padding: 0%;
+	font-family: sans-serif;
+}
+
+/*
+
+Title bar ============================================================
+
+*/
+
+#titleBar {
+    text-align: right;
+    -webkit-app-region: drag;
+}
+
+#additem {
+	color: white;
+	padding: 15px;
+	float: left;
+}
+
+/* Close button */
+
+#closeButton {
+    background-color: transparent;
+    border: none;
+    -webkit-app-region: no-drag;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+#closeButton span {
+    color: white;
+    font-size: 20px;
+}
+
+#closeButton span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#closeButton:focus {
+    outline: none;
+}
+
+/* Minimize button */
+
+#minimizeButton {
+    background-color: transparent;
+    border: none;
+    -webkit-app-region: no-drag;
+    margin: 0px;
+}
+
+#minimizeButton span {
+    color: white;
+    font-size: 20px;
+}
+
+#minimizeButton span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#minimizeButton:focus {
+    outline: none;
+}
+
+/*
+
+Add item ============================================================
+
+*/
+
+form { 
+	width: fit-content;
+	color: white;
+	margin: 0 auto;
+}
+
+#table {
+	width: auto;
+}
+
+#submit-dir {
+	background-color: blue;
+}
+
+#submit-type {
+	background-color: red;
+}
+
+.textinput {
+	width: 200px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	padding-left: 5px;
+	margin-left: 20px;
+}
+
+#type-select {
+	width: 200px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	margin-left: 20px;
+}

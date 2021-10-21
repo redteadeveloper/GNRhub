@@ -68,6 +68,6 @@ function menuMiscButton() {
     changeActiveMenu("Misc");
 }
 
-function addButton() {
-	
+function addItem() {
+	ipcRenderer.send("addItem");
 }
